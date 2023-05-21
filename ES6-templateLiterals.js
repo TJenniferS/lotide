@@ -1,7 +1,7 @@
 const name = 'Alice';
 console.log(`Hello, ${name}!`);
 
-//instead of 
+//instead of
 
 //const name = 'Alice';
 //console.log('Hello, ' + name + '!'); // logs: Hello, Alice!
