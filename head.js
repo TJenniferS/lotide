@@ -1,4 +1,4 @@
-// Function Implementation
+//base assertEqual Function Implementation
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`✔️Assertion Passed: ${actual} === ${expected}`);
@@ -15,15 +15,16 @@ const assertEqual = function(actual, expected) {
 //assertEqual("meow", "Meow"); // Similar strings
 
 
-// Function Implementation
+// Define head Function Implementation
 const head = function(array) {
+  //start from first element
   if (array.length === 0) {
     return undefined;
   }
   return array[0];
 };
 
-// Test cases
+// Test cases for head function
 assertEqual(head([5, 6, 7]), 5); //yields head 0
 assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello"); //yields head 0
 assertEqual(head([602]), 602); //yields the only one element as its head
