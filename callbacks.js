@@ -42,7 +42,7 @@ findWaldo(["Waldo", "meow"], actionWhenFound);
 // Test the findWaldo function with an anonymous callback function
 // findWaldo(["Alice", "Bob", "Waldo", "Winston"], function(index) {
 //   console.log(`Found Waldo at index ${index}!`);
-}); //actionWhenFound unnecessary
+//}); //actionWhenFound unnecessary
 
 // the anon function is
 // function(index) {
