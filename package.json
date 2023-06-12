@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@tjennifers/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Lotide library",
   "main": "ES6-templateLiterals.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/TJenniferS/lotide.git"
   },
-  "author": "",
+  "author": "TJenniferS",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/TJenniferS/lotide/issues"
