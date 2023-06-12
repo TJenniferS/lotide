@@ -30,16 +30,17 @@ const tail = function(array) {
 //assertEqual(a[0], b[0]);
 
 // Check the returned array elements from new function defined as result of tail
-const result = tail(["Hello", "Lighthouse", "Labs"]);
-assertEqual(result.length, 2); //we only want 2 elements
-assertEqual(result[0], "Lighthouse"); //first element will be "Lighthouse"
-assertEqual(result[1], "Labs"); //2nd element is "Labs"
+// const result = tail(["Hello", "Lighthouse", "Labs"]);
+// assertEqual(result.length, 2); //we only want 2 elements
+// assertEqual(result[0], "Lighthouse"); //first element will be "Lighthouse"
+// assertEqual(result[1], "Labs"); //2nd element is "Labs"
 
-//Test case: Check original array
+// //Test case: Check original array
 
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); //not capturing return value since it's not what we're checking
-assertEqual(words.length, 3); //original array should still have 3 elements
+// const words = ["Yo Yo", "Lighthouse", "Labs"];
+// tail(words); //not capturing return value since it's not what we're checking
+// assertEqual(words.length, 3); //original array should still have 3 elements
 
 //Terminal returns
 // ✔️Assertion Passed: 3 === 3
+module.exports = tail;
