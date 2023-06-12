@@ -1,11 +1,11 @@
 // base assertEqual Function Implementation
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✔️Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`❌will always fail! Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+// const assertEqual = function(actual, expected) {
+//   if (actual === expected) {
+//     console.log(`✔️Assertion Passed: ${actual} === ${expected}`);
+//   } else {
+//     console.log(`❌will always fail! Assertion Failed: ${actual} !== ${expected}`);
+//   }
+// };
 
 //Define tail Function Implementation
 const tail = function(array) {
