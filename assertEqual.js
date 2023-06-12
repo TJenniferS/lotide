@@ -61,10 +61,12 @@ const assertEqual = function(actual, expected) {
 };
 
 // Test Code
-assertEqual("Lighthouse Labs", "Bootcamp"); // Non-identical strings
-assertEqual("meow", "meow"); // Identical strings
-assertEqual(10, 10); // Identical numbers
-assertEqual(32, 9); // Non-identical numbers
-assertEqual("meow", "Meow"); // Similar strings
+// assertEqual("Lighthouse Labs", "Bootcamp"); // Non-identical strings
+// assertEqual("meow", "meow"); // Identical strings
+// assertEqual(10, 10); // Identical numbers
+// assertEqual(32, 9); // Non-identical numbers
+// assertEqual("meow", "Meow"); // Similar strings
 
 //simply run `node filename.js` in terminal
+
+module.exports = assertEqual; // export the function from this module
