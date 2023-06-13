@@ -15,5 +15,5 @@ const actionWhenFound = function(index) {
 // Test the findWaldo function
 findWaldo(["Alice", "Bob", "Waldo", "Winston"], actionWhenFound);
 
-// functions as objects && modular code
+// functions as objects and modular code
 findWaldo(["Waldo", "meow"], actionWhenFound);
