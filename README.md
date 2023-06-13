@@ -22,110 +22,173 @@ This project was created and published by me as part of my learnings at Lighthou
 
 `const results = _.tail([1, 2, 3]) // => [2, 3]`
 
+
+
 ## Documentation
 
-The following functions are currently implemented:
+The following javascript functions are currently implemented:
 
-* `assertArraysEqual.js`:
+# `assertArraysEqual(arr1, arr2)`
+- Description: Compares two arrays and logs an assertion message indicating whether they are equal or not.
 
-This module exports a function named assertArraysEqual.
-The function compares two arrays arr1 and arr2 and logs whether they are equal or not.
-It internally uses the eqArrays function to check for array equality.
+- Parameters:
+  - `arr1` (Array): The first array to compare.
+  - `arr2` (Array): The second array to compare.
+- Returns: `Passed` if the arrays are equal, `Failed` otherwise using `node assertArraysEqualTest.js`; see description for use.
 
-* `assertEqual.js`:
 
-This module exports a function named assertEqual.
-The function compares two values actual and expected and logs whether they are equal or not.
+# `assertEqual(actual, expected)`
+- Description: Compares two values and logs an assertion message indicating whether they are equal or not.
 
-* `assertObjectsEqual.js`:
+- Parameters:
+  - `actual` (Any): The actual value to compare.
+  - `expected` (Any): The expected value to compare.
+- Returns: `Passed` if the strings or integers are equal, `Failed` otherwise using `node assertEqualTest.js`; see description for use.
 
-This module exports a function named assertObjectsEqual.
-The function compares two objects actual and expected and logs whether they are equal or not.
-It internally uses the eqObjects function to check for object equality.
 
-* `callbacks.js`:
+# `assertObjectsEqual(actual, expected)`
+- Description: Compares two objects and logs an assertion message indicating whether they are equal or not.
 
-This code snippet demonstrates the concept of callback functions.
-It defines a function findWaldo that takes an array of names and a callback function found.
-The findWaldo function iterates over the names and calls the found callback when it finds a specific name ("Waldo" or "Mario").
-The actionWhenFound function is an example callback function that logs a message when Waldo is found.
-The code demonstrates how to use a callback function as an argument to another function.
+- Parameters:
+  - `actual` (Object): The actual object to compare.
+  - `expected` (Object): The expected object to compare.
+- Returns: `Passed` if the objects are equal, `Failed` otherwise; see description for use.
 
-* `countLetters.js`:
 
-This module exports a function named countLetters.
-The function takes a sentence as input and returns an object containing the count of each letter in the sentence.
-It ignores spaces while counting the letters.
+# `findWaldo(names, found)`
+- Description: Searches for the name "Waldo" in an array and executes a callback function when found.
 
-* `countOnly.js`:
+- Parameters:
+  - `names` (Array): The array of names to search through.
+  - `found` (Function): The callback function to execute when "Waldo" is found. It takes the index of "Waldo" as an argument.
+- Returns: `Found Waldo at index <index>!`
 
-This module exports a function named countOnly.
-The function takes an array of items and an object itemsToCount.
-It counts the occurrences of specific items (specified by itemsToCount) in the array and returns an object with the counts.
-If an item is not present in itemsToCount, its count will be undefined in the result.
 
-* `Test`:
-This is a directory containing assertArraysEqualTest.js, assertEqualTest.js, eqArraysTest.js, headTest.js, middleTest.js, tailTest.js:
+# `countLetters(sentence)`
+- Description: Counts the occurrences of each letter in a sentence.
 
-These files contain test cases for the corresponding modules.
-They use assertions to compare the actual outputs of the functions with the expected outputs.
+- Parameters:
+  - `sentence` (String): The sentence to count the letters in.
+- Returns: An object containing the counts of each letter.
 
-* `eqArrays.js`:
 
-This module exports a function named eqArrays.
-The function compares two arrays arr1 and arr2 and returns true if they are equal, false otherwise.
+# `countOnly(allItems, itemsToCount)`
+- Description: Counts the occurrences of specific items in an array based on provided criteria.
 
-* `eqObjects.js`:
+- Parameters:
+  - `allItems` (Array): The array of items to be counted.
+  - `itemsToCount` (Object): The object specifies the items to count and their criteria.
+- Returns: An object containing the counts of the specified items.
 
-This module exports a function named eqObjects.
-The function compares two objects object1 and object2 and returns true if they are equal, false otherwise.
-It supports nested objects and arrays, using the eqArrays function to compare arrays within objects.
-It does a deep comparison of object properties.
 
-* `without.js`:
+# `eqArrays(arr1, arr2)`
+- Description: Checks if two arrays are equal.
 
-This module exports a function called without that takes in two arrays: source and itemsToRemove. The without function returns a new array that contains the elements from the source array, excluding any elements that are also present in the itemsToRemove array.
+- Parameters:
+  - `arr1` (Array): The first array to compare.
+  - `arr2` (Array): The second array to compare.
+- Returns: `true` if the arrays are equal, `false` otherwise using `node eqArraysTest.js`.
 
-* `takeUntil.js`:
 
-This module exports a function called takeUntil that takes in an array and a callback function callback. The takeUntil function returns a new array that includes elements from the array until the callback function returns a truthy value. Once the callback returns a truthy value, the takeUntil function stops iterating and ignores the remaining elements in the array.
+# `eqObjects(object1, object2)`
+- Description: Checks if two objects are equal.
 
-* `tail.js`:
+- Parameters:
+  - `object1` (Object): The first object to compare.
+  - `object2` (Object): The second object to compare.
+- Returns: `true` if the objects are equal, `false` otherwise.
 
-This module exports a function called tail that takes in an array. The tail function returns a new array that contains all elements of the input array except for the first element. The original array remains unchanged.
 
-* `package.json`:
+# `findKey(object, callback)`
+- Description: Finds a key in an object based on a provided callback function.
 
-This file contains information on managing and running the library.
+- Parameters:
+  - `object` (Object): The object to search for a key in.
+  - `callback` (Function): The callback function to execute for each key in the object. It takes the value of each key as an argument.
+- Returns: The first key for which the callback function returns a truthy value, or `undefined` if no key is found.
 
-* `middle.js`:
 
-This module exports a function called middle that takes in an array. The middle function returns a new array that contains the middle element(s) of the input array. If the input array has an odd number of elements, the returned array contains a single middle element. If the input array has an even number of elements, the returned array contains the two middle elements.
+# `findKeyByValue(object, value)`
+- Description: Finds a key in an object based on a provided value.
 
-* `map.js`:
+- Parameters:
+  - `object` (Object): The object to search for a key in.
+  - `value` (Any): The value to find a key for.
+- Returns: The first key that corresponds to the provided value, or `undefined` if no key is found.
 
-This module exports a function called map that takes in an array and a callback function callback. The map function applies the callback function to each element in the input array and returns a new array containing the results of the callback function for each element.
 
-* `letterPosition.js`:
+# `flatten(arr)`
+- Description: Flattens a nested array into a single-level array.
 
-This module exports a function called letterPosition that takes in a string sentence. The letterPosition function returns an object where each key represents a letter in the input string, and the corresponding value is an array of indices where that letter appears in the string.
+- Parameters:
+  - `arr` (Array): The array to flatten.
+- Returns: A new array with all nested elements flattened.
 
-* `index.js`:
 
-The index.js file serves as the entry point.
+# `head(arr)`
+- Description: Retrieves the first element of an array.
 
-* `head.js`:
+- Parameters:
+  - `arr` (Array): The array to retrieve the first element from.
+- Returns: The first element of the array, or `undefined` if the array is empty.
 
-This module exports a function called head that takes in an array. The head function returns the first element of the input array.
 
-* `flatten.js`:
+# `letterPositions(sentence)`
+- Description: Maps the positions of each letter in a sentence.
 
-This module exports a function called flatten that takes in an array containing nested arrays. The flatten function flattens the nested arrays and returns a new array with all the elements concatenated together.
+- Parameters:
+  - `sentence` (String): The sentence to map the letter positions for.
+- Returns: An object containing arrays of positions for each letter.
 
-* `findKeyValue.js`:
 
-This module exports a function called findKeyValue that takes in an object and a callback function callback. The findKeyValue function searches the object and returns the first key for which the callback function returns a truthy value. If no key is found, the function returns undefined.
+# `map(arr, callback)`
+- Description: Creates a new array by applying a callback function to each element of the provided array.
 
-* `findKey.js`:
+- Parameters:
+  - `arr` (Array): The array to map over.
+  - `callback` (Function): The callback function to execute for each element of the array. It takes the element as an argument.
+- Returns: A new array with the results of the callback function applied to each element.
 
-This module exports a function called findKey that takes in an object object and a callback function callback. The findKey function searches the object and returns the first key for which the callback function returns a truthy value. If no key is found, the function returns undefined.
+
+# `middle(arr)`
+- Description: Retrieves the middle element(s) of an array.
+
+- Parameters:
+  - `arr` (Array): The array to retrieve the middle element(s) from.
+- Returns: An array containing the middle element(s) of the array.
+
+
+# `tail(arr)`
+- Description: Retrieves all elements of an array except for the first element.
+
+- Parameters:
+  - `arr` (Array): The array to retrieve the tail from.
+- Returns: A new array containing all elements except for the first element of the array.
+
+
+# `takeUntil(arr, callback)`
+- Description: Creates a new array by taking elements from the beginning of the provided array until the callback function returns a truthy value.
+
+- Parameters:
+  - `arr` (Array): The array to take elements from.
+  - `callback` (Function): The callback function to execute for each element of the array. It takes the element as an argument.
+- Returns: A new array with elements taken from the beginning of the original array until the callback function returns a truthy value.
+
+
+# `without(source, itemsToRemove)`
+- Description: Creates a new array with elements from the source array excluding the specified items to remove.
+
+- Parameters:
+  - `source` (Array): The array to filter elements from.
+  - `itemsToRemove` (Array): The array of items to remove from the source array.
+- Returns: A new array containing elements from the source array excluding the specified items.
+
+
+# `package.json`:
+
+- This file contains metadata about the project.
+
+
+# `index.js`:
+
+- Alternatively, use `require('./index')` to import any function from the library.
