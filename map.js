@@ -35,3 +35,5 @@ assertArraysEqual(map(words, word => word.toUpperCase()), ["GROUND", "CONTROL", 
 
 // Test Case 3: Mapping array elements to their first character
 assertArraysEqual(map(words, word => word[0]), ["g", "c", "t", "m", "t"]); //testing changes //
+
+module.exports = map;

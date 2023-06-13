@@ -42,3 +42,5 @@ console.log('---');
 const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"];
 const expected2 = ["I've", "been", "to", "Hollywood"];
 assertArraysEqual(takeUntil(data2, x => x === ','), expected2);
+
+module.exports = takeUntil;

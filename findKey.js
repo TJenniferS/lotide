@@ -31,3 +31,5 @@ const restaurantRatings = {
 
 assertEqual(findKey(restaurantRatings, x => x.stars === 2), "noma");
 assertEqual(findKey(restaurantRatings, x => x.stars === 4), undefined);
+
+module.exports = findKey;

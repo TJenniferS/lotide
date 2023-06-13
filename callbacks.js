@@ -22,3 +22,6 @@ findWaldo(["Alice", "Bob", "Waldo", "Winston"], actionWhenFound);
 
 // functions as objects and modular code
 findWaldo(["Waldo", "meow"], actionWhenFound);
+
+module.exports = findWaldo;
+module.exports = actionWhenFound;

@@ -44,3 +44,5 @@ assertArraysEqual(letterPositions(testString)['h'], expectedPositions['h']);
 assertArraysEqual(letterPositions(testString)['e'], expectedPositions['e']);
 assertArraysEqual(letterPositions(testString)['l'], expectedPositions['l']);
 assertArraysEqual(letterPositions(testString)['o'], expectedPositions['o']);
+
+module.exports = letterPositions;
