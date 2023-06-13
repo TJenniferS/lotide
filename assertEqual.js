@@ -1,11 +1,15 @@
-// assertEqual Function Implementation
-const assertEqual = function(actual, expected) {
-  if (actual === expected) { // they must be exactly the same
-    console.log(`✔️Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`❌Assertion Failed: ${actual} !== ${expected}`);
-  } // If the assertion is false, the message is written to the console.
+// Helper Function: Check if values are equal
+const areEqual = function(actual, expected) {
+  return actual === expected;
 };
 
-module.exports = assertEqual; // export the function from this module
+// Main Function: Assert equality of values
+const assertEqual = function(actual, expected) {
+  if (areEqual(actual, expected)) {
+    console.log(`✔️ Assertion Passed: ${actual} === ${expected}`);
+  } else {
+    console.log(`❌ Assertion Failed: ${actual} !== ${expected}`);
+  }
+};
 
+module.exports = assertEqual;
