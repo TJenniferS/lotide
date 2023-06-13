@@ -22,7 +22,9 @@ const takeUntil = (array, callback) => {
 
   for (const item of array) {
     if (callback(item)) {
-      break; // the function will exit the loop as soon as the callback returns true, ensuring that it stops processing the array elements beyond that point
+      break; // the function will exit the loop as soon as the
+      // callback returns true, ensuring that it stops processing
+      // the array elements beyond that point
     }
 
     result.push(item);
@@ -40,7 +42,3 @@ console.log('---');
 const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"];
 const expected2 = ["I've", "been", "to", "Hollywood"];
 assertArraysEqual(takeUntil(data2, x => x === ','), expected2);
-
-// Does your takeUntil function need to loop through the entire array once the callback returns a truthy value? If not, how can we make it stop?
-
-// can use break
