@@ -1,13 +1,4 @@
-// // assertEqual function
-// const assertEqual = function(actual, expected) {
-//   if (actual === expected) {
-//     console.log(`✔️ Assertion Passed: ${actual} === ${expected}`);
-//   } else {
-//     console.log(`❌ Assertion Failed: ${actual} !== ${expected}`);
-//   }
-// };
-
-// eqArrays function
+// eqArrays function use in eqObjects
 const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;
@@ -20,7 +11,7 @@ const eqArrays = function(arr1, arr2) {
   return true;
 };
 
-// eqObjects function
+// eqObjects function use in assertObjectsEqual
 const eqObjects = function(object1, object2) {
   const keys1 = Object.keys(object1);
   const keys2 = Object.keys(object2);
@@ -43,12 +34,12 @@ const eqObjects = function(object1, object2) {
 };
 
 // assertObjectsEqual function
-const assertObjectsEqual = function(actual, expected) {
+const assertObjectsEqual = function(actual, expected) { // declare the function assertObjectEqual
   const inspect = require('util').inspect;
   const actualStr = inspect(actual);
   const expectedStr = inspect(expected);
 
-  if (eqObjects(actual, expected)) {
+  if (eqObjects(actual, expected)) { // call eqObjects
     console.log(`✅✅✅ Assertion Passed: ${actualStr} === ${expectedStr}`);
   } else {
     console.log(`🛑🛑🛑 Assertion Failed: ${actualStr} !== ${expectedStr}`);
