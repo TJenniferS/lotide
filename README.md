@@ -28,7 +28,7 @@ This project was created and published by me as part of my learnings at Lighthou
 
 The following javascript functions are currently implemented:
 
-# `assertArraysEqual(arr1, arr2)`
+## `assertArraysEqual(arr1, arr2)`
 - Description: Compares two arrays and logs an assertion message indicating whether they are equal or not.
 
 - Parameters:
@@ -37,7 +37,7 @@ The following javascript functions are currently implemented:
 - Returns: `Passed` if the arrays are equal, `Failed` otherwise using `node assertArraysEqualTest.js`; see description for use.
 
 
-# `assertEqual(actual, expected)`
+## `assertEqual(actual, expected)`
 - Description: Compares two values and logs an assertion message indicating whether they are equal or not.
 
 - Parameters:
@@ -46,7 +46,7 @@ The following javascript functions are currently implemented:
 - Returns: `Passed` if the strings or integers are equal, `Failed` otherwise using `node assertEqualTest.js`; see description for use.
 
 
-# `assertObjectsEqual(actual, expected)`
+## `assertObjectsEqual(actual, expected)`
 - Description: Compares two objects and logs an assertion message indicating whether they are equal or not.
 
 - Parameters:
@@ -55,7 +55,7 @@ The following javascript functions are currently implemented:
 - Returns: `Passed` if the objects are equal, `Failed` otherwise; see description for use.
 
 
-# `findWaldo(names, found)`
+## `findWaldo(names, found)`
 - Description: Searches for the name "Waldo" in an array and executes a callback function when found.
 
 - Parameters:
@@ -64,7 +64,7 @@ The following javascript functions are currently implemented:
 - Returns: `Found Waldo at index <index>!`
 
 
-# `countLetters(sentence)`
+## `countLetters(sentence)`
 - Description: Counts the occurrences of each letter in a sentence.
 
 - Parameters:
@@ -72,7 +72,7 @@ The following javascript functions are currently implemented:
 - Returns: An object containing the counts of each letter.
 
 
-# `countOnly(allItems, itemsToCount)`
+## `countOnly(allItems, itemsToCount)`
 - Description: Counts the occurrences of specific items in an array based on provided criteria.
 
 - Parameters:
@@ -81,7 +81,7 @@ The following javascript functions are currently implemented:
 - Returns: An object containing the counts of the specified items.
 
 
-# `eqArrays(arr1, arr2)`
+## `eqArrays(arr1, arr2)`
 - Description: Checks if two arrays are equal.
 
 - Parameters:
@@ -90,7 +90,7 @@ The following javascript functions are currently implemented:
 - Returns: `true` if the arrays are equal, `false` otherwise using `node eqArraysTest.js`.
 
 
-# `eqObjects(object1, object2)`
+## `eqObjects(object1, object2)`
 - Description: Checks if two objects are equal.
 
 - Parameters:
@@ -99,7 +99,7 @@ The following javascript functions are currently implemented:
 - Returns: `true` if the objects are equal, `false` otherwise.
 
 
-# `findKey(object, callback)`
+## `findKey(object, callback)`
 - Description: Finds a key in an object based on a provided callback function.
 
 - Parameters:
@@ -108,7 +108,7 @@ The following javascript functions are currently implemented:
 - Returns: The first key for which the callback function returns a truthy value, or `undefined` if no key is found.
 
 
-# `findKeyByValue(object, value)`
+## `findKeyByValue(object, value)`
 - Description: Finds a key in an object based on a provided value.
 
 - Parameters:
@@ -117,7 +117,7 @@ The following javascript functions are currently implemented:
 - Returns: The first key that corresponds to the provided value, or `undefined` if no key is found.
 
 
-# `flatten(arr)`
+## `flatten(arr)`
 - Description: Flattens a nested array into a single-level array.
 
 - Parameters:
@@ -125,7 +125,7 @@ The following javascript functions are currently implemented:
 - Returns: A new array with all nested elements flattened.
 
 
-# `head(arr)`
+## `head(arr)`
 - Description: Retrieves the first element of an array.
 
 - Parameters:
@@ -133,7 +133,7 @@ The following javascript functions are currently implemented:
 - Returns: The first element of the array, or `undefined` if the array is empty.
 
 
-# `letterPositions(sentence)`
+## `letterPositions(sentence)`
 - Description: Maps the positions of each letter in a sentence.
 
 - Parameters:
@@ -141,7 +141,7 @@ The following javascript functions are currently implemented:
 - Returns: An object containing arrays of positions for each letter.
 
 
-# `map(arr, callback)`
+## `map(arr, callback)`
 - Description: Creates a new array by applying a callback function to each element of the provided array.
 
 - Parameters:
@@ -150,7 +150,7 @@ The following javascript functions are currently implemented:
 - Returns: A new array with the results of the callback function applied to each element.
 
 
-# `middle(arr)`
+## `middle(arr)`
 - Description: Retrieves the middle element(s) of an array.
 
 - Parameters:
@@ -158,7 +158,7 @@ The following javascript functions are currently implemented:
 - Returns: An array containing the middle element(s) of the array.
 
 
-# `tail(arr)`
+## `tail(arr)`
 - Description: Retrieves all elements of an array except for the first element.
 
 - Parameters:
@@ -166,7 +166,7 @@ The following javascript functions are currently implemented:
 - Returns: A new array containing all elements except for the first element of the array.
 
 
-# `takeUntil(arr, callback)`
+## `takeUntil(arr, callback)`
 - Description: Creates a new array by taking elements from the beginning of the provided array until the callback function returns a truthy value.
 
 - Parameters:
@@ -175,7 +175,7 @@ The following javascript functions are currently implemented:
 - Returns: A new array with elements taken from the beginning of the original array until the callback function returns a truthy value.
 
 
-# `without(source, itemsToRemove)`
+## `without(source, itemsToRemove)`
 - Description: Creates a new array with elements from the source array excluding the specified items to remove.
 
 - Parameters:
@@ -184,11 +184,11 @@ The following javascript functions are currently implemented:
 - Returns: A new array containing elements from the source array excluding the specified items.
 
 
-# `package.json`:
+## `package.json`:
 
 - This file contains metadata about the project.
 
 
-# `index.js`:
+## `index`:
 
 - Alternatively, use `require('./index')` to import any function from the library.
