@@ -1,7 +1,12 @@
-// Callback function example
+// Helper Function: Check if a name is Waldo
+const isWaldo = function(name) {
+  return name === "Waldo";
+};
+
+// Main Function: Find Waldo in an array and execute a callback when found
 const findWaldo = function(names, found) {
   names.forEach(function(name, index) {
-    if (name === "Waldo") {
+    if (isWaldo(name)) {
       found(index); // execute callback with index argument
     }
   });
