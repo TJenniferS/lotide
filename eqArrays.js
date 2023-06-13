@@ -1,5 +1,5 @@
-// Function Implementation eqArrays
-const eqArrays = function(arr1, arr2) {
+// Helper Function: Check if two arrays are equal
+const arraysAreEqual = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;
   }
@@ -13,4 +13,9 @@ const eqArrays = function(arr1, arr2) {
   return true;
 };
 
-module.exports = eqArrays; // tests with assertEqual
+// Main Function: Compare two arrays for equality
+const eqArrays = function(arr1, arr2) {
+  return arraysAreEqual(arr1, arr2);
+};
+
+module.exports = eqArrays;
